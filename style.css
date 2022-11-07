@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* loader */
+body {
+    width: 100%;
+    height: 100vh;
+    background: #659999;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f4791f, #659999);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f4791f, #659999);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: #fdbb2d;
+    overflow: hidden;
+}
+
+/* _____________________________________ */
+.container {
+    display: none;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+
+a {
+    margin: 10px;
+    margin-left: 50px;
+    text-decoration: none;
+    font-size: 20px;
+    opacity: .5;
+    transform: translateX(-200px);
+    transition: 1s;
+}
+
+a:hover {
+    color: aqua;
+    opacity: 1;
+}
+
+.holder {
+    width: 150px;
+    height: 100px;
+    margin: 10px;
+    margin-right: 50px;
+    border: none;
+    border-bottom: 3px double green;
+    transform: translateX(200px);
+    cursor: pointer;
+
+}
+
+.holder h3 {
+    opacity: .5;
+    text-align: center;
+    line-height: 100px;
+    transition: 1s;
+}
+
+.list_group {
+    position: relative;
+    overflow: hidden;
+}
+
+.list_items {
+    display: inline-block;
+    margin: 10px 100px;
+    text-decoration: none;
+
+    transform: translateY(30px);
+    transition: 1s;
+}
+
+.list_items a {
+    text-decoration: none;
+}
+
+.pyanlr {
+    transform: translateX(0);
+    transform: translateY(0);
+}
+
+.info {
+    width: 100%;
+    height: 500px;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    padding: 100px 10px;
+    margin-bottom: 100px;
+    overflow: hidden;
+
+}
+
+.content .int {
+    text-align: center;
+    line-height: 70px;
+}
+
+.content {
+    width: 800px;
+    height: 500px;
+
+    display: flex;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: 1s;
+}
+
+.content.bor {
+    border-top: 3px solid red;
+    border-bottom: 3px solid red;
+}
+
+.contenter {
+    transition: all 2s linear;
+}
+
+.contenter h3 {
+    font-size: 70px;
+    margin: 100px 20px;
+    opacity: .5;
+    transition: .5s;
+}
+
+
+.contenter p {
+    font-size: 40px;
+    margin: 0 30px;
+    margin-bottom: 10px;
+    transform: translateX(-400px);
+    transition: all .5s linear;
+}
+
+.contenter h4 {
+    font-size: 45px;
+    margin: 0 30px;
+    transform: translateX(-500px);
+    transition: all .5s linear;
+}
+
+.contenter h3 span {
+    opacity: 0;
+}
+.contenter h3:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.contenter h3 span.anii {
+    opacity: 1;
+}
+
+.h4.pyanyout,
+.p.pyanyout {
+    display: block;
+    transform: translateX(0);
+    margin: 5px 30px;
+}
+
+.graph {
+    width: 450px;
+    height: 400px;
+    border: none;
+
+    position: absolute;
+    top: 50;
+    right: 5%;
+}
+
+.graph.gbor {
+
+    border-top: 5px solid red;
+
+}
+
+.graph .inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.graph .inner .shells {
+    width: 100px;
+    height: 400px;
+    transition: 3s;
+}
+
+.liquid1 {
+    width: 100%;
+    height: 45%;
+    background-color: skyblue;
+}
+
+.liquid2 {
+    width: 100%;
+    height: 80%;
+    background-color: silver;
+}
+
+.liquid3 {
+    width: 100%;
+    height: 65%;
+    background-color: goldenrod;
+}
+
+.graph .inner .shells {
+    transform: translateY(-400px);
+}
+
+.graph .inner .shells.sapp {
+    transform: translateY(0px);
+}
+
+.graph .inner .shells .graphtext {
+    font-weight: bold;
+    font-size: 30px;
+    opacity: .5;
+    text-align: center;
+
+}
+
+/* .project{
+    display: none;
+}
+.project .proapp{
+    display: block;
+} */
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+
+}
+
+.btn {
+    font-size: 25px;
+    opacity: .5;
+    background: transparent;
+    border: none;
+    margin: 10px 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.inscon {
+    width: 100%;
+    height: 100vh;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.imgcon div {
+    width: 500px;
+    height: 100px;
+    /* background: url(img1.png); */
+    background: none;
+    margin: 10px;
+    border: 3px solid #373B44;
+    border-radius: 5px;
+    position: relative;
+    opacity: 0;
+    transition: all 1s;
+    transform: translateY(50px);
+    overflow: hidden;
+
+
+}
+.imdiv.block{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.imdiv::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    /* background-color: black; */
+    background: #373B44;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4286f4, #373B44);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4286f4, #373B44);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #0F2027;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    z-index: -1;
+    transition: all .5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+    transform: scaleX(0);
+
+}
+
+.imdiv:hover::before {
+    transform: scaleX(1);
+}
+
+.imgcon p a {
+    text-align: start;
+    line-height: 100px;
+    font-size: 30px;
+    /* color: blredack;  */
+    border-radius: 5px;
+    text-decoration: none;
+
+}
+
+.contactContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.foinner form label {
+    display: block;
+    font-size: 25px;
+    opacity: .5;
+    margin: 10px 0;
+}
+
+.foinner form .form-control {
+    width: 100%;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 3px solid grey;
+    background: transparent;
+
+}
+
+.form-control:focus {
+    outline: none;
+}
+
+.foinner form .textarea {
+    width: 100%;
+    background: transparent;
+    padding: 10px 5px;
+}
+
+.foinner form div {
+    width: 103%;
+}
+
+.foinner form div .btnSub {
+    width: 100%;
+    padding: 10px 5px;
+    margin-top: 10px;
+    background-color: transparent;
+    opacity: .5;
+    border: 3px solid grey;
+    cursor: pointer;
+}
+.btnSub:hover{
+    opacity: 1;
+    color: aqua;
+}
+
+.socialapp {
+    width: 100%;
+    text-align: center;
+}
